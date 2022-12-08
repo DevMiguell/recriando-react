@@ -34,7 +34,7 @@ const buildDOM = vnode => {
   for (child of vnode.children) {
     node.appendChild(buildDOM(child))
   }
-  
+
   return node
 }
 
@@ -62,7 +62,7 @@ const starters = [
   }
 ];
 
-export const TitleBox = ({ title, children }) => {
+const TitleBox = ({ title, children }) => {
   return (
     <div style={`padding: 2em;`}>
       <h3>{title}</h3>
@@ -70,7 +70,6 @@ export const TitleBox = ({ title, children }) => {
     </div>
   );
 };
-
 
 const App = () => {
   return (
